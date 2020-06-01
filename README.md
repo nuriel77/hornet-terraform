@@ -9,6 +9,27 @@ This is a simple manifest to help deploy multiple VPS on Hetzner and provision H
 * Make sure you have added your public SSH key in Hetzner's GUI
 * Install terraform 0.12 from [here](https://www.terraform.io/downloads.html)
 
+## Installing Terraform
+
+Depending on your OS, choose the right version on terraform's [download page](https://www.terraform.io/downloads.html)
+
+Here's an example installing terraform `0.12.26` on Linux:
+
+```sh
+$ cd /tmp
+$ wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+$ unzip terraform_0.12.26_linux_amd64.zip
+$ sudo install -m 755 terraform /usr/local/bin/terraform
+$ terraform version
+Terraform v0.12.26
+```
+
+## Clone this Repository
+
+```sh
+git clone https://github.com/nuriel77/hornet-terraform.git && cd hornet-terraform
+```
+
 ## Usage
 
 ### API Key
