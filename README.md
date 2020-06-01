@@ -71,6 +71,15 @@ Simply run:
 terraform apply
 ```
 
+## Scale Up/Down
+Just set a new number of desired VPS:
+
+```sh
+export TF_VAR_vps_count=10
+```
+
+And run `terraform apply` to submit. New instances will be added or removed to match the new number.
+
 ## Destroy
 Run:
 ```sh
